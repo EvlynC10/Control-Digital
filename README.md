@@ -52,8 +52,8 @@ Este trabajo documenta la implementación de los siguientes sistemas de automati
 * La lógica garantiza la **independencia** del control: el **botón físico** actúa como *toggle* (encendido/apagado), anulando el brillo si el LED está deshabilitado.
 
 ### Práctica 4: Control de Velocidad PID
-* **Modelado del Sistema:** Obtención de la Función de Transferencia del Motor DC: $$G(s)=\frac{4.444}{0.0054s+1}$$.
-* **Adquisición de Datos Precisa:** Uso de **interrupciones externas** para el conteo de pulsos del encoder y una **interrupción por temporizador** ($T_s=6.7\text{ ms}$) para la periodicidad del control.
+* **Modelado del Sistema:** Obtención de la Función de Transferencia del Motor DC.
+* **Adquisición de Datos Precisa:** Uso de **interrupciones externas** para el conteo de pulsos del encoder y una **interrupción por temporizador** para la periodicidad del control.
 * **Verificación:** El controlador demostró **estabilidad**, **bajo sobrepaso** y un error en estado estacionario **inferior**, verificando la robustez ante perturbaciones.
 
 ---
